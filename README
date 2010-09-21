@@ -1,0 +1,17 @@
+last updated:  21-Sept-2010, 8:02pm GMT
+
+What is phpmygrades?
+--------------------
+phpmygrades uses a combination of PHP and SQL to store grades (as well as small communication forums) for a school.
+
+
+What are you doing with it?
+---------------------------
+This was originally developed many years ago for a school project.  Currently, I hope the experience and wisdom I've gained over the years will help this become better than ever!
+My thoughts for its growth can be found in the TODO file.
+
+
+Can I help?
+------------
+Sure!  If you have any suggestions, feel free to email them to me at <borismalcov [at] users [dot] sf [dot] net>.
+Alternatively, if you're handy with code, feel free to merge changes with this github.
