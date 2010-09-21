@@ -1,0 +1,14 @@
+CREATE TABLE `absences` (`ID` int(11) NOT NULL,  `user_ID` int(11) NOT NULL default '0',  `timestamp` char(10) NOT NULL default '',PRIMARY KEY  (`ID`));
+CREATE TABLE `categories` (`ID` int(11) NOT NULL,  `teacher` int(11) NOT NULL default '0', `class` int(11) NOT NULL default '0',  `name` text NOT NULL,  `weight` text NOT NULL,PRIMARY KEY  (`ID`));
+CREATE TABLE `classes` (`ID` int(11) NOT NULL,  `name` text NOT NULL, `teacher` int(11) NOT NULL default '0', `room` text NOT NULL,  `period` int(11) NOT NULL default '0',`semester` text NOT NULL,PRIMARY KEY  (`ID`));
+CREATE TABLE `failed` (`number` int(11) NOT NULL, `user` text NOT NULL,  `timestamp` varchar(10) NOT NULL default '',  `ip` varchar(15) NOT NULL default '',PRIMARY KEY  (`number`));
+CREATE TABLE `grades` (`class_id` int(11) NOT NULL default '0',  `assign_number` int(11) NOT NULL default '0', `assign_name` text NOT NULL,  `assign_desc` text NOT NULL,  `date_assigned` varchar(10) NOT NULL default '',  `grading_period` int(11) NOT NULL default '0',  `student_ID` int(11) NOT NULL default '0', `points_possible` text NOT NULL,  `points_scored` text NOT NULL,  `category` int(11) NOT NULL default '0',`comment` text NOT NULL);
+CREATE TABLE `logins` (`number` int(11) NOT NULL, `user` text NOT NULL, `timestamp` varchar(10) NOT NULL default '', `IP` varchar(15) NOT NULL default '',PRIMARY KEY  (`number`));
+CREATE TABLE `mail` (`id` int(11) NOT NULL,  `from` int(11) NOT NULL default '0',  `to` int(11) NOT NULL default '0',  `subject` text NOT NULL,  `body` text NOT NULL,  `timestamp` varchar(10) NOT NULL default '',  `read` int(11) NOT NULL default '0',  `deleted` int(11) NOT NULL default '0',PRIMARY KEY  (`id`));
+CREATE TABLE `news` (`ID` int(11) NOT NULL,  `class` int(11) NOT NULL default '0',  `timestamp` varchar(10) NOT NULL default '',  `subject` text NOT NULL,  `body` text NOT NULL,  PRIMARY KEY  (`ID`));
+CREATE TABLE `parents` (  `ID` int(11) NOT NULL,  `parent_ID` int(11) NOT NULL default '0', `students` text NOT NULL,  PRIMARY KEY  (`ID`));
+CREATE TABLE `pass_recovery` (  `email` text NOT NULL,  `hash` varchar(15) NOT NULL default '');
+CREATE TABLE `posts` (`post_ID` int(11) NOT NULL,  `topic_ID` int(11) NOT NULL default '0',  `poster` int(11) NOT NULL default '0',  `timestamp` varchar(10) NOT NULL default '',  `body` text NOT NULL,  `deleted` int(11) NOT NULL default '0',  PRIMARY KEY  (`post_ID`));
+CREATE TABLE `students` (`ID` int(11) NOT NULL default '0',  `studentID` text NOT NULL, `classes` text NOT NULL);
+CREATE TABLE `topics` (`ID` int(11) NOT NULL,  `name` text NOT NULL,  `class_ID` int(11) NOT NULL default '0',  PRIMARY KEY  (`ID`));
+CREATE TABLE `users` (`ID` int(11) NOT NULL,  `username` text NOT NULL,  `password` varchar(32) NOT NULL default '',  `type` int(11) NOT NULL default '0',  `firstname` text NOT NULL,  `surname` text NOT NULL,  `gender` char(1) NOT NULL default '',  `email` text NOT NULL,  PRIMARY KEY  (`ID`));

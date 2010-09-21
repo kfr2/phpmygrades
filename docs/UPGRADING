@@ -1,0 +1,22 @@
+Basic Instructions
+-------------------
+1.  Make a backup of your config.php file (just in case).  You may also 
+want to make a backup of your SQL database.
+2.  Overwrite all the old files with the new ones.
+3.  Run upgrade.php (through a web browser, or whatever).  It'll tell 
+you if you need to do anything else (like manually update config.php).
+4.  Login as admin (if you already aren't) and go to your options page.  
+Make sure every option is the way you want it to be (because options may 
+have been added), and save your options.
+4.  Your release should be upgraded; contact me if something doesn't 
+work correctly for you.
+
+0.1.1 - 0.1.2
+--------------
+The ability to assign categories to assignments has been added.  Because 
+of this, teachers should go back and assign old assignments a category.  
+(The averaging function won't work without doing so.)
+
+0.1.0 - 0.1.1
+--------------
+Just following the basic instructions should work for this release.

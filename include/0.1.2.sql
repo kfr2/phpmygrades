@@ -1,0 +1,13 @@
+ALTER TABLE `categories` CHANGE `name` `name` TEXT NOT NULL, CHANGE `weight` `weight` TEXT NOT NULL;
+ALTER TABLE `classes` CHANGE `name` `name` TEXT NOT NULL, CHANGE `room` `room` TEXT NOT NULL, CHANGE `semester` `semester` TEXT NOT NULL;
+ALTER TABLE `failed` CHANGE `user` `user` TEXT NOT NULL;
+ALTER TABLE `grades` CHANGE `assign_name` `assign_name` TEXT NOT NULL, CHANGE `assign_desc` `assign_desc` TEXT NOT NULL, CHANGE `points_possible` `points_possible` TEXT NOT NULL, CHANGE `points_scored` `points_scored` TEXT NOT NULL, CHANGE `comment` `comment` TEXT NOT NULL;
+ALTER TABLE `logins` CHANGE `user` `user` TEXT NOT NULL;
+ALTER TABLE `mail` CHANGE `subject` `subject` TEXT NOT NULL, CHANGE `body` `body` TEXT NOT NULL;
+ALTER TABLE `news` CHANGE `subject` `subject` TEXT NOT NULL, CHANGE `body` `body` TEXT NOT NULL;
+ALTER TABLE `parents` CHANGE `students` `students` TEXT NOT NULL;
+ALTER TABLE `pass_recovery` CHANGE `email` `email` TEXT NOT NULL;
+ALTER TABLE `posts` CHANGE `body` `body` TEXT NOT NULL;
+ALTER TABLE `students` CHANGE `studentID` `studentID` TEXT NOT NULL, CHANGE `classes` `classes` TEXT NOT NULL;
+ALTER TABLE `topics` CHANGE `name` `name` TEXT NOT NULL;
+ALTER TABLE `users` CHANGE `username` `username` TEXT NOT NULL, CHANGE `password` `password` CHAR( 32 ) NOT NULL, CHANGE `firstname` `firstname` TEXT NOT NULL, CHANGE `surname` `surname` TEXT NOT NULL, CHANGE `email` `email` TEXT NOT NULL;

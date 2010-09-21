@@ -1,0 +1,56 @@
+(An up-to-date version of this file can be viewed at http://phpmygrades.sourceforge.net/UsersGuide)
+
+phpmygrades strives to be very easy to use.  However, documentation is provided in case 
+someone needs it, or just feels like reading it.
+
+This guide is split into two different sections:
+1.  students
+2.  teachers
+
+(Note:  For information regarding use of the system via accesskeys, read 
+the file called 'accesskeys.')
+
+For students
+============
+1.  To login to phpmygrades, go to wherever your school or institution has it.  Then 
+login with your username and password, which should have been provided to you.
+2.  After logging in, you will be transferred to the main menu.  Here, you will be 
+provided with your latest grades (if you have any), and latest news (if any).  Also, 
+under this information box will be a list of your classes, with your current average in 
+each.
+3.  If you want to view all the assignments in a certain class, click on its respective 
+name.  For example, if you want to view your assignments in your calculus class, click 
+on 'calculus.'
+4.  After clicking on the class's name, you will be presented with information about 
+the class, including the teacher, your average, and a list of the assignments for that 
+grading period.  If you wish to change grading periods (if available) 
+click on the respective link.
+5.  Next, you can check your messages (or send one to a teacher or the administrator) by clicking on 
+the link that says 'messages.'  This link may also be replaced with 'new message(s)' if you 
+have one or more unread messages.
+6.  Under the 'options' link, you can change various settings, like your 
+password and e-mail address.
+7.  Finally, the 'logout' link will log you out of the system.
+
+
+For teachers
+============
+1.  Login to the system with your username and password.  You will be transferred to the main page.
+2.  From here, you can add or edit an assignment for your classes (via 'classes'), view and send 
+messages (via 'messages', which may say 'new message(s)' if you have new messages), add or edit news 
+posts for your classes (via 'add:edit news'), change your options (via 'options'), and logout (via 
+'logout').
+3.  If you click on the 'classes' link, you will be presented with a list of your classes (for all 
+semesters), as well as options to add/edit assignments and view the list of students in the class.  The 
+list of students also has the students' current average.
+4.  After clicking on 'add an assignment,' you will be presented with a form that will allow you to add 
+an assignment to the class.  This includes the assignment's name, the date it was assigned and the 
+total amount of points it was worth.  You can also assign how many points a student scored on the 
+assignment.  If the student needs to make up the assignment, or you don't want it to show up in their 
+average (useful for bonus assignments), put a 'x' (or 'X') in the box.  To add the assignment, click 
+'add the assignment.'
+5.  Editing an assignment is done in almost the same way.  You just choose the assignment's name from 
+the list.  It is also possible to remove an assignment with this form.
+6.  The other menu items should be self-explanatory.  If they are not, feel free to contact me for 
+help.
+

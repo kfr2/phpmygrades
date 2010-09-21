@@ -1,0 +1,51 @@
+body{ background-color: #c0c0c0; font-family: sans-serif; }
+a{ text-decoration: none; }
+a:hover{ color: #ff0000; }
+a:active{ color: #d6e3ef; background-color: #ff0000; }
+a em{ text-decoration: underline; font-style: normal; font-weight: normal; }
+img{ border: none; }
+
+.container { background-color: #d6e3ef; overflow: auto; height: auto; width: auto; border: 1px solid #000000; }
+.container2 { background-color: #ffffff; overflow: auto; height: auto; width: auto; border 1px solid #000000; padding: 10px; }
+.title { font-size: 1.5em; text-align: center; padding: 2px; }
+.right{ text-align: right; }
+.mainpagehr{ width: 25%; text-align: left;  margin: 0 auto 0 0; }
+.menu{ font-size: .9em; text-align: center; padding: 2px; font-family: sans-serif; }
+.copyright { font-size: .8em; font-style: italic; padding: 3px; font-family: sans-serif; }
+
+.tdcolour0{ background-color: #c0c0c0; }
+.tdcolour1{ background-color: #d6e3ef; }
+
+input, select, textarea{ background-color: #d3d3d3; padding: 2px; border: 1px solid #000000; }
+textarea:focus, input:focus{ background-color: #ffffff; }
+
+.mail_content_holder{ padding: 20px; border: 1px solid; font-family: serif; font-size: 1em; background-color: #f5f5f5; }
+.mail_title{ font-size: 1.2em; color: #ff0000; }
+.mail_byline{ font-size: .5em; color: #110000; border: 1px dotted #110000; }
+.mail_body{ font-size: 1em; padding: 4px; }
+.mail td{ text-align: left; font-family: sans-serif; font-size: .95em; }
+
+.news_background{ background-color: #f5f5f5; border-top: 1px dotted #000000; border-left: 1px dotted #000000; border-right: 1px dotted #000000; }
+.news_item{ border-bottom: 1px dotted #000000; padding: 4px; }
+.news_subject{ font-size: 1.1em; color: #ff0000; }
+.news_body{ font-family: serif; }
+.news_byline{ font-size: .5em; color: #110000; }
+.news_byline a{ color: #110000; }
+
+.spreadheader{ background-color: #000000; color: #ffffff; }
+.spreadinformation{ background-color: #444444; color: #ffffff; }
+
+.big{ font-size: 1.3em; padding: 2px; text-align: left; }
+.slightly_bigger{ font-size: 1.1em; }
+.small{ font-size: 0.8em; }
+.grades{ background-color: #f5f5f5; border: 1px dotted #000000; padding: 5px; }
+.class_name{ font-size: 1.1em; text-decoration: underline; }
+.class_info{ background-color: #d6e3ef; border: 2px dotted #000000; padding: 5px; }
+
+.grades0{ background-color: #c0c0c0; border-bottom: 1px dotted #000000; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 5px; }
+.grades1{ background-color: #cccccc; border-bottom: 1px dotted #000000; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 5px; }
+
+.posttable{ width: 100%; }
+.posttable i{ font-size: 0.8em; }
+.postbody1{ background-color: #c0c0c0; border-left: 10%; }
+.postbody2{ background-color: #d6e3ef; border-left: 10%; }

@@ -1,0 +1,77 @@
+(An up-to-date version of this file can be viewed at http://phpmygrades.sourceforge.net/AdminsGuide)
+
+Look at the Installation Guide
+(http://phpmygrades.sourceforge.net/InstallationGuide) 
+if you need help with installing PHPMyGrades. Otherwise, let's get started...
+
+Date Formats
+============
+So, you're not satisfied with the date or time formats available in 
+phpmygrades? Contact me with the format you'd like included; it'll be 
+available upon next release.
+
+However, you can add them yourself if you don't feel like waiting. Open 
+up options.php in your favourite text editor, and look for a line that 
+says "$date" (or "$time") + "_formats = array..." Simply add the correct 
+PHP date() options to the end of the array, surrounded by double quotes 
+(" 's). Also make sure that you put the a comma before each group of 
+options.
+
+
+Adding Classes
+==============
+To add classes, click on the 'add' class link under the menu. You may 
+also use the 'b' access key. You must add teachers before adding a 
+class.
+
+
+Adding Students and Teachers
+============================
+Quite obviously, you need to add students and teachers to make the 
+system useful. To do so, click on the respective link on your menu. 
+Before adding a student, you must add classes.
+
+
+Adding Parents
+==============
+You must add students before you add a parent account to them. To add a 
+parental account, go to the edit students link, and select the student 
+you'd like to add the parental account to. Click on the 'add/edit 
+parental accounts' link at the bottom of the page. From here, you may 
+either add an already existing parent (useful if a parent has more than 
+one child in a school), or add a new parent account and automatically 
+attach it to the student. You may also remove a parent from a student by 
+clicking on 'remove.'
+
+
+Editing Things
+==============
+Click on the respective link to edit a user or class. The forms for 
+doing so should be self explanatory.
+
+
+Messages
+========
+You can check or send your messages by clicking on 'messages.' This link 
+may change to 'new message(s)' if you have one or more messages.
+
+
+News
+====
+To add or edit news, click on the respective 'news' link. News for 
+'everyone' is displayed on the main (login) page.
+
+
+Options
+=======
+You may edit various options (obviously) under the 'options' page.
+
+
+Logout
+======
+'Logout' will log you out of the system... 
+
+
+This piece of documentation really needs some work.. If you have 
+suggestions on what to place here, please let me know (see FAQ for 
+contact information).

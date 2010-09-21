@@ -1,0 +1,42 @@
+0.1.4:  
+----------------
+-added a print stylesheet
+-removed printer-friendly javascript (as it is no longer needed)
+-added the CVS tag $Id: CHANGELOG,v 1.13 2006/07/19 19:54:53 borismalcov Exp $ to the php files
+
+0.1.3:  8-Oct-05
+----------------
+-miscellaneous style improvements
+-fixed bugs related to the changing of some functions
+-several javascript additions/improvements (remove menu and license on print view, etc)
+-printer-friendly pages for students
+-ability for teachers to view (and print) multiple assignments at once
+
+0.1.2:  20-Aug-05
+----------------
+-Corrected typo'ed function and a few other misc. bugs
+-Added checking to the required add pages (teachers before classes, classes before students)
+-Added ability to track attendance
+-Added `absences` table to the database
+-Fixed bug in the class' news feed
+-Fixed bug in the forums (second reply wouldn't add)
+-Modified add.php to use better username checking (It now makes sure a username definitely isn't in the database before adding it)
+-Added ability to assign different categories to assignents; they are used to weigh assignments differently.
+-Added `categories` to the database.
+-Fixed bug in edit.php (script would crash while attempting to modify an older assignment after adding new students to the class)
+-Added parental accounts.  They can be assigned to multiple students.
+-Added `parents` to the database.
+-Modified options script to print the config file to admins if it can't write it to disk.  (Allows admins to update it manually.)
+
+0.1.1:  21-Jul-05
+----------------
+-Added support for class discussion via a forum
+-Reduced clutter from display_latest_news()
+-Updated scripts to allow for comments on grades
+-Added ability for admins to edit the classes a student is enrolled in
+-More 'printer-friendly' class list page
+-Fixed javascript bug on assignment page
+
+0.1.0:	21-Jun-05
+----------------
+-Initial release of phpmygrades.

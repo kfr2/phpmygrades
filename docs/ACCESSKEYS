@@ -1,0 +1,31 @@
+(An up-to-date version of this file can be viewed at http://phpmygrades.sourceforge.net/AccessKeys)
+
+Accesskeys allow for easy access to the menu 
+(http://www.alistapart.com/articles/accesskeys/).
+You can use them (with compatible web browsers, like Mozilla Firefox) by 
+pressing ALT + the key, or by using SHIFT + ESCAPE + the key in Opera.
+
+For Everyone
+==============
+l	-	logout
+o	-	options
+i	-	index (main page)
+m	-	messages
+t	-	attendance (if track_attendance is on)
+
+For Teachers
+==============
+c	-	classes
+a	-	add news
+e	-	edit news
+
+For Admins
+==============
+a	-	add news
+e	-	edit news
+z	-	add teacher
+x	-	edit teacher
+c	-	add student
+v	-	edit student
+b	-	add class
+n	-	edit class

@@ -1,0 +1,39 @@
+(An up-to-date version of this file can be viewed at http://phpmygrades.sourceforge.net/InstallationGuide)
+
+-------------------------
+To install phpmygrades  |
+-------------------------
+1.  Download a copy of the latest code (in whichever format you'd like) 
+from the files page 
+(http://sourceforge.net/project/showfiles.php?group_id=140425). 
+2.  Decompress (and unarchive, if necessary) the file to a web 
+directory. If you can, give the web server write access to the include/ directory 
+under this directory. 
+3.  Create a database, along with a username and password combination 
+that may access it, for phpmygrades. 
+4.  Open a web browser, and go to 
+http://your-web-server/wherever-phpmygrades-is-installed/install.php. 
+5.  Fill out all applicable fields, and click "Install." 
+6.  If the web server does not have write access to the directory, you 
+will need to manually create config.php and fill it with the information that 
+should be presented to you. 
+7.  Delete install.php (which isn't needed, since the installer sees if 
+an installion is already present before continuing, but is recommended 
+anyway). You can also delete upgrade.php, if it's present. 
+8.  Go to the main page (http://your-web-server/phpmygrades/index.php) 
+and login with your admin username and password.
+9.  Go to the options page and make sure every setting is correct.  Save 
+when finished.
+
+-------------------------
+To upgrade phpmygrades  |
+-------------------------
+1.  make a backup of your current database, just in case something goes 
+wrong. It is also wise to make a backup of include/config.php. 
+read any release notes (which will come with the new distribution) and 
+2.  follow any special instructions. Otherwise: 
+3.  replace the old files with the new ones 
+4.  run update.php 
+5.  go to your options page (as an administrator) and make sure all 
+fields are filled out correctly (several may have been added). Once finished, 
+go to save.

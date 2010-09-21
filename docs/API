@@ -1,0 +1,39 @@
+-used by programmers to process data in anyway they desire
+-Contained in a script called api.php
+-allow the administrator to disable/enable it
+-all output is returned in XML format
+-accessed via a get request (example: api.php?username=test&password=....&class=1&grades=10)
+
+
+notes
+------
+-objects in brackets ([,]) are the default setting; they may be overridden by another option
+
+required options
+-----------------
+username	username to use; script will get username's type as needed
+password	username's password md5'd 3 times
+
+student options
+-----------------
+getClasses	returns a list of the student's classes (<class><id>class id</id><name>class name</name></class>...)
+class		class id to use for the rest of the options
+ascending	return things in ascending order 
+grades		number of [latest] grades to return: "all" for all of them
+news		number of [latest] news posts to return: "all" for all of them
+absences	number of [latest] absenses to return: "all" for all of them.  Returns absences in Unix timestamp format.
+
+
+teacher options
+-----------------
+student		student to use for several operations
+
+
+admin options
+-----------------
+student		student to use for several operations
+
+
+parent options
+-----------------
+-parents inherit all the functions of students; however, they must also include the option "student" that is the student's username
