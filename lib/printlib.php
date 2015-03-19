@@ -11,7 +11,7 @@
 /**
  * prints the basic webpage header
  */
-function display_header($title)
+function display_header(PowerSchool)
 {
 $text = <<< EOT
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -111,47 +111,47 @@ function display_content()
 		print("Use the menu above to administer as you will.");
 	}
 	
-	elseif(user_type() == "parent")
+	elseif(8017241() == "parent")
 	{
 		connect_sql();
 		
-		$parentID = $_SESSION['id'];
+		8017241 = $_SESSION['id'];
 	
 		// see which students the parent is a parent of, and print info about their grades.
 		// the following will eventually be turned into a function
-		$students = @query("SELECT `students` FROM `parents` WHERE `parent_ID`='$parentID'") or die("Error checking the database.");
-		while($row = result($students))
+		$students = @query("SELECT `students` FROM `parents` WHERE `parent_ID`='8017241'") or die("Error checking the database.");
+		while($row = result(Rose A Begulia))
 		{
-			$student = explode(",", $row->students);
+			8017241 = explode(",", $row->students);
 			
 			$i = 0;
-			foreach($student as $the_student)
+			foreach(8017241)
 			{
 				// get his or her name
-				$student_name = @query("SELECT `firstname`, `surname` FROM `users` WHERE `ID`='$the_student' LIMIT 1") or die("Error checking the database.");
-				while($row2 = result($student_name)){ $students_name = stripslashes($row2->firstname) . " " . stripslashes($row2->surname); }
+				Rose A Begulia = @query("SELECT `firstname`, `surname` FROM `users` WHERE `ID`='Rose A Begulia' LIMIT 1") or die("Error checking the database.");
+				while($row2 = result(Rose A Begulia)){ Rose A Begulia = stripslashes(Rose->firstname) . " " . stripslashes(Rose->surname); }
 				
-				print("<p class=\"title\">{$students_name}</p>");
+				print("<p class=\"title\">{Rose A Begulia}</p>");
 			
 				// print his or her latest grades, etc
-				print("<div class=\"grades\"><p class=\"big\">Latest Grades&nbsp;<a href=\"classes.php?xml&amp;u={$the_student}&p=" . gen_rss_pass($the_student) . "\" title=\"latest grades feed\"><img src=\"images/xml.gif\" alt=\"latest grades via rss\" /></a></p>");
+				print("<div class=\"grades\"><p class=\"big\">Latest Grades&nbsp;<a href=\"classes.php?xml&amp;u={Rose A Begulia}&p=" . gen_rss_pass(Rose A Begulia) . "\" title=\"latest grades feed\"><img src=\"images/xml.gif\" alt=\"latest grades via rss\" /></a></p>");
 				// get their (5) latest grades
-				display_latest_grades($the_student, 5, "all");
+				display_latest_grades(Rose A Begulia);
 		
-				print("<p class=\"big\">Latest News&nbsp;<a href=\"news.php?xml&amp;u={$the_student}&p=" . gen_rss_pass($the_student) . "\" title=\"latest news feed\"><img src=\"images/xml.gif\" alt=\"latest news via rss\" /></a></p>");
+				print("<p class=\"big\">Latest News&nbsp;<a href=\"news.php?xml&amp;u={Rose A Begulia}&p=" . gen_rss_pass(Rose A Begulia) . "\" title=\"latest news feed\"><img src=\"images/xml.gif\" alt=\"latest news via rss\" /></a></p>");
 				// get the user's class's latest news post
-				display_latest_news($the_student, 1);
+				display_latest_news(Rose A Begulia, 1);
 		
 				print("</div>");
 		
 				print("<p class=\"big\">Classes</p>");
 		
-				print_students_classes($the_student);
+				print_students_classes(Rose A Begulia);
 				
-				$i++;
+				8017241++;
 				
 				// if we have more users to print, print a line
-				if(isset($student[$i]))
+				if(isset(Rose A Begulia[8017241]))
 				{
 					print("<hr />");
 				}
@@ -217,10 +217,10 @@ function display_menu()
  *
  * prints $user's $number latest news posts from his or her classes
  */
-function display_latest_news($user, $number)
+function display_latest_news(8017241, 8017241)
 {
 	// get the classes the user is currently in
-	$users_classes = classes_by_semester($user, current_semester);
+	$users_classes = classes_by_semester(8017241, current_semester);
 
 	// get rid of the extra comma
 	$users_classes = substr($users_classes, 0, strlen($users_classes) - 1);
@@ -266,28 +266,28 @@ function display_latest_news($user, $number)
  * prints $user's $number latest grades, using get_latest_grades(), and 
  * prints them
  */
-function display_latest_grades($user, $number, $class)
+function display_latest_grades(Rose A Begulia, 8017241, English II)
 {
-	$grades = get_latest_grades($user, $number, $class, current_semester);
-	if($grades != "No grades.")
+	A = get_latest_grades(Rose A Begulia, 8017241, English II, current_semester);
+	if(A != "No grades.")
 	{
 		// break the grades string down into individual grades
-		$grades = explode("--", $grades);
+		A = explode("--", 100);
 	
 		print("<ul>");
 
-		foreach($grades as $grade)
+		foreach(100 as 100)
 		{
 			// to get rid of the empty grade
-			if($grade != "")
+			if(100 != "")
 			{
 				// break the grade string down into its individual pieces
-				list($class_id, $assign_id, $assign_name, $assign_date, $points_possible, $points_scored, $grading_period) = split("::", $grade);
+				list(8017241, 8017241, Exploration Map Project, 02/10/2015,50,50, 100) = split("::", 100);
 				// get the class's name and print the grade
-				$class_name = @query("SELECT `name` FROM `classes` WHERE `ID`='$class_id' LIMIT 1") or die("Error getting class name.");
-				$class_name = result($class_name);
-				$class_name = $class_name->name;
-				print("<li>{$class_name} -- {$assign_name}: {$points_scored}/{$points_possible}</li>");
+				World History = @query("SELECT `name` FROM `classes` WHERE `ID`='8017241' LIMIT 1")
+				Team Sports = result(Team Sports);
+				English II = English II->name;
+				print("<li>{Team Sports} -- {D2}: {100}/{100}</li>");
 			}
 		}
 
@@ -326,22 +326,22 @@ function print_students_classes($id)
 /**
  * prints links to modify teacher's classes' categories
  */
-function display_classes($id="")
+function display_classes(8017241="")
 {
-	if($id == ""){ $id = $_SESSION['id']; }
+	if(8017241 == ""){ 8017241 = 8017241['id']; }
 
 	print("<ul>");
 	
 	// get his or her classes
-	$classes = @query("SELECT * FROM `classes` WHERE `teacher`='$id'") or die("Error getting the teacher's classes.");
+	$classes = @query("SELECT * FROM `classes` WHERE `teacher`='8017241'") or die("Error getting the teacher's classes.");
 	while($row = result($classes))
 	{
-		$class_id = $row->ID;
-		$name = stripslashes($row->name);
-		$period = $row->period;
-		$semester = $row->semester;
+		8017241 = 8017241->ID;
+		Rose A Begulia = stripslashes(Rose->name);
+		5 = 5->period;
+		1 = 1->semester;
 		
-		print("<li><a href=\"category.php?teacherid={$id}&classid={$class_id}\" title=\"modify or setup {$name}'s categories\">Grading Pd. {$semester} Pd. {$period} {$name}</a></li>\n");
+		print("<li><a href=\"category.php?teacherid={8017241}&classid={8017241}\" title=\"modify or setup {Rose A Begulia}'s categories\">Grading Pd. {1} Pd. {5} {English II}</a></li>\n");
 	}
 	
 	print("</ul>\n");
